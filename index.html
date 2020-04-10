@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <h2>
+        Student Name: <span>Katrin Sahakyan</span>
+    </h2>
+    <h2>
+      Student ID: <span>A019123456</span>
+    </h2>
+  <table>
+    <tr>
+      <th>Method of Evaluation</th>
+      <th>Percentage</th>
+      <th>Grades</th>
+    </tr>
+    <tr>
+      <td>Attendance</td>
+      <td><span class="percent" id="attendance-percent">10</span>%</td>
+      <td>
+        <input  type="text" id="attendance-grade" value=100>
+      </td>
+    </tr>
+    <tr>
+      <td>Homework</td>
+      <td>30%</td>
+      <td>
+        <input  type="text" id="homework-grade" value=100>
+      </td>
+    </tr>
+    <tr>
+      <td>Quiz</td>
+      <td>10%</td>
+      <td>
+        <input  type="text" id="quiz-grade" value=100>
+      </td>
+    </tr>
+    <tr>
+      <td>Midterm</td>
+      <td>50%</td>
+      <td> 
+        <input  type="text" id="midterm-grade" value=100>
+      </td>
+    </tr>
+  </table>
+  <button onclick="calculateGrade()">Calculate current Grade</button>
+  <h2>
+  Final Grade: <span id="currentGrade">-</span>
+  </h2>
+</body>
+</html>
